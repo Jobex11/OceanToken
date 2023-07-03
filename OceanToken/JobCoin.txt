@@ -1,0 +1,59 @@
+ GUIDELINES IN MINTING MY TOKEN
+
+ [TOKEN DESIGN -> OceanToken]
+
+ 1. INITIAL SUPPLY (send to owner)
+ -lets send our owner with 70million
+
+
+ 2. MAX SUPPLY (capped)  
+ - 100,000,000(100million)
+ note bitcoin has 21million
+ for games make it LIMITLESS
+
+
+ 3. MAKE TOKEN BURNABLE
+ -making it possible to consume tokens
+
+
+ 4. CREATE BLOCK REWARD TO DISTRUBUTE NEW SUPPLY TO MINNERS
+ _beforeTokenTransfer
+
+ _mintMinerRewards
+
+
+ COMPILING AND DEBUGING OF CODES
+ 1. check your hardhat.config and set the
+ pragma version to the version in your contracts or else and error will
+ be prompted
+ 2. press -> npx hardhat compile
+
+
+UNIT TESTING
+1. copy the file from the reporder
+2. to run the test -> npx hardhat test
+
+
+DEPLOY OUR SMARTCONTRACT TO THE BLOCKCHAIN
+1. create an environment variable
+(.env) file
+2. then install dotenv
+-> npm i dotenv
+3. copy hardhatConfig from repo
+4. copy file for .gitignore
+5. copy your private key inside the .env
+6. go to infura.io to create an account
+7. copy the sepolia testnet from the ethereum mainnet
+8. copy deploy.js code from the repo under the scripts
+9. to deploy sepolia 
+run -> npm install
+then,
+ -> npx hardhat run --network sepolia scripts/deploy.js
+10. ocean token first deployed with this account
+-> 0x71F6C5C385ab8b170F4b9DFFf987f7aA8A60b86F
+11. copy the deployment address and 
+-check for import account in your metamask and
+search for the deployment account on it.
+then import it
+12. Go to 
+-> etherscan.io  to view transaction of OCT coin
